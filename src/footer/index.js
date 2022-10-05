@@ -1,13 +1,10 @@
 import * as React from 'react';
 import logo from '../images/logo.png';
 import { Box, Grid, Container, Link, Typography, IconButton } from '@mui/material';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Linkdin from '../images/linkdin.png';
 import Twitter from '../images/twitter.png';
 import Decord from '../images/decord.png';
 import Instagram from '../images/instagram.png';
-
-
 
 const Footer = () => {
 
@@ -67,4 +64,5 @@ const Footer = () => {
         </div>
     );
 };
+
 export default Footer;

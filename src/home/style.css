@@ -2,7 +2,9 @@ body {
     background: #000000;
     margin: 0;
 }
-
+.p-0 {
+    padding: 0px !important;
+}
 .first-back {
     background-image: url(../images/first-bg.png);
     background-size: contain;
@@ -16,7 +18,9 @@ body {
     z-index: -1;
     max-width: 100%;
 }
-
+.first-main-top {
+    position: relative;
+}
 .first-main {
     padding: 50px 0px;
     justify-content: space-between;
@@ -92,10 +96,29 @@ button.start-trading-btn {
     border: 5px solid #333333;
     border-radius: 40px;
     max-width: 1207.98px;
-    height: 618px;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+.discover-video .vpfr_player_controls .discover-video .vpfr_video_wrapper {
+    max-width: 1207.98px;
+    height: 450px;
     width: 100%;
 }
-
+.discover-video .vpfr_player_controls {
+    width: calc(100% - 105px) !important;
+}
+.discover-video .vpfr_player_controls, .discover-video .vpfr_play_pause_on_click {
+    width: calc(100% - 10px) !important;
+}
+.discover-video .vpfr_container {
+    max-width: 1207.98px;
+    height: 450px;
+    width: 100%;
+}
+.vpfr_paused_player .vpfr_play_pause_on_click {
+    width: calc(100% - 0px) !important;
+}
 .discover-future-content h2 {
     font-family: 'Overpass';
     font-style: normal;
@@ -658,7 +681,7 @@ button.header-btn {
     border-radius: 14px;
     margin: 10px;
     padding: 10px;
-    max-width: 187px;
+    max-width: 160px;
 }
 .team-slider-list h5 {
     font-family: 'Overpass';
@@ -701,17 +724,17 @@ button.header-btn {
     color: #FFFFFF;
     margin-top: 0px;
 }
-button.slick-arrow.slick-next {
+.team-main button.slick-arrow.slick-next {
     left: -70px;
     bottom: 30%;
     top: inherit;
 }
-button.slick-arrow.slick-prev {
+.team-main button.slick-arrow.slick-prev {
     left: -100px;
     bottom: 30%;
     top: inherit;
 }
-.slick-next:before {
+.team-main .slick-next:before {
     content: '→';
     background: -webkit-linear-gradient(#36D1DC, #5B86E5);
     -webkit-background-clip: text;
@@ -719,19 +742,225 @@ button.slick-arrow.slick-prev {
     font-size: 24px !important;
     line-height: 23px !important;
 }
-.slick-prev:before {
-    content: '→';
+.team-main .slick-prev:before {
+    content: '←';
     background: -webkit-linear-gradient(#36D1DC, #5B86E5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 24px !important;
     line-height: 23px !important;
 }
-.team-meet-main {
-    overflow-y: hidden;
-    padding: 50px 0px;
+.team-main {
+    overflow: hidden;
 }
-
+.vpfr_video_poster_image {
+    background-size: cover;
+}
+.discover-video .vpfr_video {
+    width: 100%;
+    height: 100%;
+}
+.boost-portfolio {
+    padding: 80px 0px;
+}
+.boots-main .slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+}
+.boost-content h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 61px;
+    color: #EFF4FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boost-content h2 span {
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 10px;
+}
+.boost-content h2 img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.boots-slider-list .boots-list-hdg {
+    display: flex;
+    align-items: center;
+}
+.boots-slider-list .boots-list-hdg h5 {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 5px;
+}
+.boots-list-left p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+    margin-bottom: 3px;
+}
+.boots-list-left span {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.boots-list-right h5 {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.boots-list-right p {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    color: #A1A1A1;
+}
+.boots-list-right span {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+.boots-list-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column !important;
+}
+.boots-slider-list {
+    margin: 0px 10px;
+    background: #101010;
+    border-radius: 12px;
+    border: 1px solid #5FD2F4;
+    padding: 11px 16px;
+}
+.boost-content h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.boost-portfolio-left-content p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #BDBDBD;
+}
+.boots-cont-lists h4 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #BDBDBD;
+    margin: 0px;
+}
+.boots-cont-lists  p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    color: #BDBDBD;
+    margin: 0px;
+}
+.boots-cont-lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boost-slide .MuiSlider-track {
+    background-color: #fff;
+    height: 10px;
+}
+.boost-slide .MuiSlider-rail {
+    background-color: #515151;
+    height: 10px;
+}
+.boost-slide {
+    margin: 40px 0px;
+}
+.boost-slide .MuiSlider-thumb::after {
+    background: linear-gradient(90deg, #36D1DC 0%, #5B86E5 100%);
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 47px !important;
+    height: 74px !important;
+    border-radius: 30px;
+}
+.boost-slide .MuiBox-root {
+    width: 100%;
+}
+.boost-buton {
+    text-align: center;
+    padding-top: 50px;
+}
+.boost-buton p {
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FCFCFC;
+}
+.boots-main {
+    padding-bottom: 30px;
+}
+.boost-portfolio-content {
+    position: relative;
+}
+.boost-portfolio-content .first-back {
+    background-image: url(http://localhost:3000/static/media/first-bg.291a462d7ba6eee1685d.png);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: 70%;
+    height: 100%;
+    z-index: 1;
+    max-width: 100%;
+}
+.boost-portfolio-contain {
+    padding: 30px;
+}
+.boost-right-graph {
+    position: relative;
+    z-index: 1;
+}
 
 @media (min-width:992px) and (max-width:1199.98px) {
     .first-left-content h2 {
@@ -740,8 +969,8 @@ button.slick-arrow.slick-prev {
     }
 
     .first-left-content h1 {
-        font-size: 120px;
-        line-height: 120px;
+        font-size: 100px;
+        line-height: 100px;
     }
 
     .first-left-content p {
@@ -803,6 +1032,27 @@ button.slick-arrow.slick-prev {
         font-size: 40px;
         line-height: 50px;
     }
+    .boots-cont-lists h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .boots-cont-lists p {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .boost-slide .MuiSlider-thumb::after {
+        width: 40px !important;
+        height: 60px !important;
+    }
+    .boost-portfolio-left-content p {
+        font-size: 16px;
+    }
+    .boost-slide {
+        margin: 20px 0px;
+    }
+    .boots-main {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width:899.98px) {
@@ -813,12 +1063,12 @@ button.slick-arrow.slick-prev {
     .menu-icon {
         justify-content: flex-end;
     }
-    button.slick-arrow.slick-prev {
+    .team-main button.slick-arrow.slick-prev {
         left: 0;
         bottom: -45px !important;
         top: initial;
     }
-    button.slick-arrow.slick-next {
+    .team-main button.slick-arrow.slick-next {
         left: 30px;
         bottom: -45px !important;
         top: initial;
@@ -888,6 +1138,30 @@ button.slick-arrow.slick-prev {
     .countMatter-list h4 {
         font-size: 40px;
     }
+    
+    .boost-portfolio {
+        padding: 0px 0px 40px 0px;
+    }
+    .boots-cont-lists p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .boots-cont-lists h4 {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    .advisor-left h2 {
+        text-align: center;
+    }
+    .boost-portfolio-content .first-back {
+        width: 100%;
+    }
+    .boost-right-graph img {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -898,12 +1172,14 @@ button.slick-arrow.slick-prev {
         line-height: 40px;
     }
 
-
     .first-main {
         padding: 30px 0px;
         width: 100% !important;
         justify-content: center;
         text-align: center;
+    }
+    .first-right-image-right {
+        justify-content: center;
     }
 
     .first-left-content p {
@@ -1112,5 +1388,123 @@ button.slick-arrow.slick-prev {
     }
     .team-meet-main {
         padding: 30px 0px;
+    }
+    .discover-video .vpfr_container {
+        height: 300px;
+    }
+    .discover-video .vpfr_player_controls, .discover-video .vpfr_play_pause_on_click {
+        width: calc(100% - 20px) !important;
+    }
+    
+   .discover-future-crypto {
+        padding: 0px !important;
+    }
+    .discover-video .vpfr_volume_progress_back, .vpfr_volume_progress_fields {
+        max-width: 50px !important;
+    }
+    .discover-video .vpfr_timers {
+        font-size: 10px;
+    }
+    .discover-video .vpfr_player_controls button svg {
+        padding: 0px !important;
+        font-size: 20px !important;
+        width: 16px;
+        height: 16px;
+    }
+    .vpfr_player_item {
+        margin: 0;
+    }
+    .boost-content h2 img {
+        display: none;
+    }
+    .boost-content h2 {
+        display: block;
+        text-align: center;
+    }
+    .boost-content h2 span {
+        padding-right: 0;
+    }
+    .boost-portfolio {
+        padding: 40px 0px;
+    }
+    .boost-slide .MuiSlider-thumb::after {
+        width: 30px !important;
+        height: 40px !important;
+    }
+    .boots-cont-lists h4 {
+        font-size: 20px;
+    }
+    .boost-portfolio-left-content p {
+        font-size: 16px;
+        text-align: center;
+        margin: 0px;
+    }
+    .boost-slide {
+        margin: 20px 0px;
+    }
+    .boots-cont-lists p {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0px;
+        padding-left: 5px;
+    }
+    .header-logo {
+        width: 120px;
+    }
+    .boost-buton {
+        text-align: center;
+        padding-top: 0px;
+    }
+    .boost-buton button.start-trading-btn {
+        margin-top: 20px;
+    }
+    .boots-cont-list {
+        margin-top: 10px;
+    }
+    .advisors-main {
+        padding: 20px 0px;
+    }
+    .boost-portfolio-content .first-back {
+        width: 100%;
+    }
+    .boost-right-graph img {
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .trade-cont-Futures {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:599.98px) {
+
+    .team-main .slick-track {
+        transform: initial !important;
+        max-width: 600px;
+        height: 260px;
+        display: flex;
+        overflow-y: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .team-main .slick-slide {
+        min-width: 120px;
+        margin-right: 34px;
+    }
+    .team-main .slick-list {
+        padding-left: 0px !important;
+    }
+    .team-main .slick-prev, .team-main .slick-next {
+        display: none !important;
+    }
+    .team-main {
+        padding-bottom: 20px;
     }
 }

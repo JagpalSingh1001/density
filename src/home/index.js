@@ -1,7 +1,4 @@
 import * as React from 'react';
-
-// import firstImage from '../images/first-image-gif.gif';
-import firstImage from '../images/first-image.png';
 import Icon1 from '../images/icon-1.png';
 import Icon2 from '../images/icon-2.png';
 import Icon3 from '../images/icon-3.png';
@@ -19,6 +16,7 @@ import referIcon from '../images/refer-icon.png';
 import tradeFutures from '../images/trade-image.png';
 import referImage from '../images/refer-img.png';
 import faqImage from '../images/faq-image.png';
+import bootsImage from '../images/boots-graph.png';
 import './style.css';
 import { Grid, Container, Box } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
@@ -29,49 +27,69 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Header from '../header';
 import Footer from '../footer';
 import Team from '../teamSlider';
-// import Gif from '../images/first-image.gif';
-import Gif from "../images/first-image.gif";
+import BoostPortfolio from '../boostPortfolio';
+import loadingGif from "../images/first-image-gif.gif";
+import { ReactVideoPlayer } from 'video-player-for-react'
+import 'video-player-for-react/dist/index.css';
+
+import Slider from '@mui/material/Slider';
+
+function valueLabelFormat(value) {
+    const units = ['KB', 'MB', 'GB', 'TB'];
+
+    let unitIndex = 0;
+    let scaledValue = value;
+
+    while (scaledValue >= 1024 && unitIndex < units.length - 1) {
+        unitIndex += 1;
+        scaledValue /= 1024;
+    }
+
+    return `${scaledValue} ${units[unitIndex]}`;
+}
+
+function calculateValue(value) {
+    return 2 ** value;
+}
+
 
 function Home() {
+
+    const [value, setValue] = React.useState(10);
+
+    const handleChange = (event, newValue) => {
+        if (typeof newValue === 'number') {
+            setValue(newValue);
+        }
+    };
+
     return (
         <div className="App">
             <Header />
 
             <div className="">
-                <Container fixed>
-                    <div className=''>
-                        <div className="first-back"></div>
-                        <Grid container spacing={2} columns={16} className="first-main">
-                            <Grid item md={6} sm={12}>
-                                <div className='first-left-content'>
-                                    <h2>TRADE THE</h2>
-                                    <h1>FUTURE</h1>
-                                    <p>Trade in <span>PERPETUAL</span> contract of  bitcoin, ethereum and <span>100+ COINS</span> using leverage upto <span>10x</span></p>
-                                    <span className='text-first'>🎉 Get reward upto $10 on first signup</span>
-                                    <button className='start-trading-btn'>START TRADING</button>
-                                </div>
-                            </Grid>
-                            <Grid item md={6} sm={12}>
-                                <div className='first-right-image'>
-                                    {/* <CardMedia src="" alt="image" ></CardMedia> */}
-                                    {/* <Card sx={{ maxWidth: 345 }}>
-                                        <CardMedia
-                                            component="video"
-                                            height="140"
-                                            image={firstImage}
-                                            alt="green iguana"
-                                        />
-                                    </Card> */}
-                                    <img src={firstImage} />
-                                    <button className='start-trading-btn'>START TRADING</button>
-                                </div>
-                            </Grid>
+                <Container fixed maxWidth="xl" className='first-main-top'>
+                    <div className="first-back"></div>
+                    <Grid container spacing={2} columns={16} className="first-main">
+                        <Grid container item md={6} sm={12}>
+                            <div className='first-left-content'>
+                                <h2>TRADE THE</h2>
+                                <h1>FUTURE</h1>
+                                <p>Trade in <span>PERPETUAL</span> contract of  bitcoin, ethereum and <span>100+ COINS</span> using leverage upto <span>10x</span></p>
+                                <span className='text-first'>🎉 Get reward upto $10 on first signup</span>
+                                <button className='start-trading-btn'>START TRADING</button>
+                            </div>
                         </Grid>
-                    </div>
-
+                        <Grid container item md={6} sm={12} className='first-right-image-right'>
+                            <div className='first-right-image'>
+                                <img src={loadingGif} alt="wait until the page loads" />
+                                <button className='start-trading-btn'>START TRADING</button>
+                            </div>
+                        </Grid>
+                    </Grid>
                 </Container>
 
-                <Container maxWidth="xl" p-0 className='discover-future-crypto'>
+                <Container maxWidth="xl" className='discover-future-crypto p-0'>
                     <Container>
                         <div className=''>
                             <Grid item p={2}>
@@ -79,9 +97,19 @@ function Home() {
                                     <h2>Discover the FUTURE of Crypto</h2>
 
                                     <div className='discover-video'>
-                                        <Gif
-                                            fontSize="inherit"
-                                            style={{ fontSize: "200px" }}
+                                        <ReactVideoPlayer
+                                            // width='928px'
+                                            url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                                            type='video/mp4'
+                                            poster='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg'
+                                        // captions={[
+                                        //   {
+                                        //     kind: 'captions',
+                                        //     label: 'English',
+                                        //     srcLang: 'en',
+                                        //     src: 'caption_url'
+                                        //   }
+                                        // ]}
                                         />
                                     </div>
 
@@ -168,6 +196,72 @@ function Home() {
                             </div>
                         </Container>
                     </div>
+
+                    <div className="boost-portfolio">
+                        <Container>
+                            <BoostPortfolio />
+                        </Container>
+                        <div className="boost-portfolio-content">
+                            <div className="first-back"></div>
+                            <Container className="boost-portfolio-contain">
+                                <Grid container spacing={3}>
+                                    <Grid item md={6} sm={12}>
+                                        <div className="boost-portfolio-left-content">
+                                            <p>Select leverage from below slider</p>
+
+                                            <div className="boost-slide">
+                                                <Box sx={{ width: 250 }}>
+                                                    <Slider
+                                                        value={value}
+                                                        min={5}
+                                                        step={1}
+                                                        max={30}
+                                                        scale={calculateValue}
+                                                        getAriaValueText={valueLabelFormat}
+                                                        valueLabelFormat={valueLabelFormat}
+                                                        onChange={handleChange}
+                                                        valueLabelDisplay="auto"
+                                                        aria-labelledby="non-linear-slider"
+                                                    />
+                                                </Box>
+                                            </div>
+
+                                            <p>By trading in long side,  your profit in last 24 hour:</p>
+
+                                            <Grid container spacing={3} className="boots-cont-list">
+                                                <Grid item md={6} sm={12}>
+                                                    <div className="boots-cont-lists">
+                                                        <h4>Normal market return</h4>
+                                                        <p>12%</p>
+                                                    </div>
+                                                </Grid>
+                                                <Grid item md={6} sm={12}>
+                                                    <div className="boots-cont-lists">
+                                                        <h4>Leverage account return</h4>
+                                                        <p>84%</p>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
+                                        </div>
+                                    </Grid>
+                                    <Grid item md={6} sm={12}>
+                                        <Box className="boost-right-graph">
+                                            <img src={bootsImage} alt="" />
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                            </Container>
+                        </div>
+
+                        <Container>
+                            <Box className="boost-buton">
+                                <p>🔥 Trade with full power </p>
+                                <button className='start-trading-btn'>START TRADING</button>
+                            </Box>
+
+                        </Container>
+                    </div>
+
 
                     <div className='advisor-main'>
                         <Container>
@@ -408,10 +502,9 @@ function Home() {
                     </Container>
                 </div>
 
-
             </div>
             <Footer />
-        </div>
+        </div >
     );
 }
 

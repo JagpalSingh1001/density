@@ -1,0 +1,1116 @@
+body {
+    background: #000000;
+    margin: 0;
+}
+
+.first-back {
+    background-image: url(../images/first-bg.png);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.first-main {
+    padding: 50px 0px;
+    justify-content: space-between;
+}
+
+.first-left-content h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.first-left-content h1 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 100px;
+    margin: 0px;
+    color: #36D1DC;
+}
+
+.first-left-content p {
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    color: #BDBDBD;
+    margin-bottom: 35px;
+    margin-top: 45px;
+}
+
+.first-left-content p span {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.first-left-content span.text-first {
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: underline;
+    color: #FCFCFC;
+    margin-bottom: 24px;
+    display: block;
+    text-align: left;
+}
+
+button.start-trading-btn {
+    max-width: 337px;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 49px;
+    background: linear-gradient(90deg, #36D1DC 0%, #5B86E5 100%);
+    border-radius: 55px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.discover-video {
+    background: #101010;
+    border: 5px solid #333333;
+    border-radius: 40px;
+    max-width: 1207.98px;
+    height: 618px;
+    width: 100%;
+}
+
+.discover-future-content h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #E2E8EA;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.discover-future-crypto {
+    background-color: #0D0D0D;
+}
+
+.discover-button {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.density-button {
+    text-align: center;
+    margin: 0px;
+}
+
+.choose-content h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 116.6%;
+    color: #E2E8EA;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.choose-list {
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.choose-list {
+    text-align: center;
+    margin-bottom: 78px;
+    background: rgba(56, 56, 56, 0.15);
+    border: 1px solid #383838;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.choose-list h4 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.choose-list p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #BCBCBD;
+    margin-top: 0px;
+}
+
+.choose-list img {
+    width: 105px;
+    height: 95px;
+    object-fit: contain;
+}
+
+.choose-list h4 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-main {
+    padding: 50px 0px;
+}
+
+.trade-content .trade-left h2 {
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.trade-content .trade-left h2 span {
+    color: #36D1DC;
+}
+
+.trade-left p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 51px;
+}
+
+.trade-right img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+}
+
+.trade-cont-Futures {
+    align-items: center;
+}
+
+.advisor-left h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.advisor-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.advisor-cont {
+    padding: 50px 0px;
+}
+
+.advisors-left h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+}
+
+.advisors-content ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advisors-content ul li {
+    width: 20%;
+    text-align: center;
+}
+
+.advisors-content ul li h5 {
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: rgba(179, 172, 172, 0.9);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.advisors-content ul li p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(173, 172, 172, 0.6);
+    margin-top: 0px;
+}
+
+.advisors-heading h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.advisors-main {
+    padding: 50px 0px;
+}
+
+.countMatter-heading h2 {
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.countMatter-heading p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+.countMatter-list {
+    background: rgba(56, 56, 56, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    padding: 46px 10px;
+    border: 1px solid #383838;
+}
+
+.countMatter-main {
+    padding: 50px 0px;
+    background-color: #0D0D0D;
+}
+
+.countMatter-list h4 {
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 8px 0px;
+}
+
+.countMatter-list p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+.countMatter-content {
+    margin-top: 40px;
+}
+
+.refer-earn-heading h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 61px;
+    color: #EFF4FF;
+    margin-bottom: 0px;
+}
+
+.refer-earn-heading h2 span {
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.refer-earn-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refer-earn-cont h3 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.refer-earn-cont p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.refer-earn-contents {
+    background: #191919;
+    border-radius: 36px;
+    margin-top: 39px !important;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+
+.refer-earn-img img {
+    max-width: 339px;
+    max-height: 355px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-logo {
+    margin-right: 52px;
+}
+
+.refer-earn-main {
+    padding: 50px 0px;
+    background-color: #0D0D0D;
+}
+
+.faq-main {
+    background-color: #0D0D0D;
+}
+
+.faq-heading h2 {
+    font-family: 'Overpass';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.faq-left img {
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.faq-cont {
+    align-items: center;
+}
+
+.faq-right .MuiAccordion-root.MuiAccordion-rounded {
+    background: #191919;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    margin-bottom: 21px;
+}
+
+.faq-right .MuiAccordion-root.MuiAccordion-rounded .MuiAccordionSummary-content {
+    font-family: 'Overpass';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 20px 0px;
+}
+
+.faq-right .MuiCollapse-root.MuiCollapse-vertical p.MuiTypography-root {
+    color: #fff;
+}
+
+.MuiAccordionSummary-expandIconWrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border-radius: 30px;
+}
+
+.MuiAccordionSummary-expandIconWrapper svg {
+    fill: #5B86E5;
+    transform: rotate(270deg);
+}
+
+.MuiAccordionSummary-expandIconWrapper.Mui-expanded svg {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    padding: 50px 0px;
+}
+
+button.header-btn {
+    width: 100%;
+    left: 0px;
+    background: linear-gradient(90deg, #36D1DC 0%, #5B86E5 100%);
+    border-radius: 55px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    height: 40px;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.header-main {
+    background-color: #0D0D0D !important;
+    padding: 10px;
+}
+
+.header-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.first-right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.first-right-image button.start-trading-btn {
+    display: none;
+}
+
+.first-left-content button.start-trading-btn {
+    display: block;
+}
+
+.header-right {
+    display: block;
+}
+
+.footer-main {
+    background: #0D0D0D;
+    border-top: 1px solid #2E2E2E;
+    padding-top: 56px;
+    padding-bottom: 36px;
+}
+
+.footer-first p {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8C8C8C;
+}
+
+.footer-links h4 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.footer-links a {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8C8C8C;
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #36D1DC;
+}
+
+.footer-first p a {
+    color: #36D1DC;
+    text-decoration: none;
+}
+
+.footer-copyright p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8C8C8C;
+    text-align: center;
+}
+
+.footer-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    color: #fff;
+}
+
+.team-slider .slick-wrapper {
+    width: 80%;
+    background-color: aqua;
+}
+
+.team-slider .slide-item {
+    background-color: rebeccapurple;
+    color: aqua;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    border: 1px solid white;
+}
+
+.team-slider .slide-item h3 {
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+}
+.team-slider .slick-initialized .slick-slide {
+    display: block;
+}
+.team-slider .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.team-slider-list {
+    background: #FFFFFF;
+    border-radius: 14px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 187px;
+}
+.team-slider-list h5 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    color: #000000;
+    margin: 10px 0px 5px 0px;
+}
+.team-slider-list p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: #000000;
+    margin: 0px;
+}
+.team-slider-list img {
+    width: 100%;
+    max-height: 206px;
+    object-fit: contain;
+}
+.team-left-content h2 {
+    font-family: 'Overpass';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.team-left-content p {
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+button.slick-arrow.slick-next {
+    left: -70px;
+    bottom: 30%;
+    top: inherit;
+}
+button.slick-arrow.slick-prev {
+    left: -100px;
+    bottom: 30%;
+    top: inherit;
+}
+.slick-next:before {
+    content: '→';
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px !important;
+    line-height: 23px !important;
+}
+.slick-prev:before {
+    content: '→';
+    background: -webkit-linear-gradient(#36D1DC, #5B86E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px !important;
+    line-height: 23px !important;
+}
+.team-meet-main {
+    overflow-y: hidden;
+    padding: 50px 0px;
+}
+
+
+@media (min-width:992px) and (max-width:1199.98px) {
+    .first-left-content h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .first-left-content h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .first-left-content p {
+        margin: 10px 0px 20px 0px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    button.start-trading-btn {
+        font-size: 18px;
+        max-width: 250px;
+        height: 50px;
+    }
+
+    .MuiContainer-maxWidthLg.MuiContainer-fixed {
+        max-width: 100%;
+    }
+
+    .first-main {
+        justify-content: space-between;
+        flex-wrap: initial !important;
+    }
+
+    .discover-future-content h2 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .choose-content h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .choose-list {
+        margin-bottom: 40px;
+    }
+
+    .advisors-content ul li {
+        width: 50%;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .advisors-content ul {
+        display: flex;
+        flex-wrap: initial;
+        overflow-y: auto;
+    }
+    .advisors-content ul li h5 {
+        font-size: 18px;
+    }
+    .advisors-heading h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .trade-content .trade-left h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width:899.98px) {
+    .header-right {
+        display: none !important;
+    }
+
+    .menu-icon {
+        justify-content: flex-end;
+    }
+    button.slick-arrow.slick-prev {
+        left: 0;
+        bottom: -45px !important;
+        top: initial;
+    }
+    button.slick-arrow.slick-next {
+        left: 30px;
+        bottom: -45px !important;
+        top: initial;
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .first-left-content h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .first-left-content h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .first-left-content p {
+        margin: 10px 0px 20px 0px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    button.start-trading-btn {
+        font-size: 18px;
+        max-width: 250px;
+        height: 50px;
+    }
+
+    .MuiContainer-maxWidthLg.MuiContainer-fixed {
+        max-width: 100%;
+    }
+
+    .first-main {
+        justify-content: space-between;
+        flex-wrap: initial !important;
+    }
+
+    .discover-future-content h2 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .choose-content h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .choose-list {
+        margin-bottom: 40px;
+    }
+
+    .advisors-content ul li {
+        width: 50%;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .advisors-content ul {
+        display: flex;
+        flex-wrap: initial;
+        overflow-y: auto;
+    }
+
+    .countMatter-list h4 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .first-left-content h2,
+    .first-left-content h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+
+    .first-main {
+        padding: 30px 0px;
+        width: 100% !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .first-left-content p {
+        font-size: 16px;
+        margin-bottom: 35px;
+        margin-top: 16px;
+    }
+
+    .first-left-content span.text-first {
+        display: none;
+    }
+
+    .first-left-content button.start-trading-btn {
+        display: none;
+    }
+
+    .first-right-image button.start-trading-btn {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        padding: 10px 20px;
+        height: 40px;
+        max-width: 217px;
+        margin: 36px auto 0 auto;
+    }
+
+    .advisors-content ul {
+        display: flex;
+        flex-wrap: initial;
+        overflow-y: scroll;
+        padding-left: 0px;
+    }
+
+    .advisors-content ul li {
+        width: 50%;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .discover-future-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .discover-video {
+        height: 300px;
+    }
+
+    button.start-trading-btn {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        padding: 10px 20px;
+        height: 40px;
+        max-width: 217px;
+        margin: 36px auto 0 auto;
+    }
+
+    .choose-main {
+        padding: 10px 0px 20px 0px;
+    }
+
+    .choose-content h2 {
+        font-size: 24px;
+        margin: 0px 0px 35px 0px;
+    }
+
+    .choose-list h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .choose-list p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .choose-list {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .trade-content .trade-left h2 {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .trade-left p {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .trade-right img {
+        height: 300px;
+    }
+
+    .refer-earn-main {
+        display: none;
+    }
+
+    .faq-main {
+        display: none;
+    }
+
+    .countMatter-heading h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .countMatter-heading p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .countMatter-content-lists {
+        overflow-x: auto;
+        flex-wrap: initial !important;
+        justify-content: space-between;
+    }
+
+    .countMatter-lists {
+        max-width: 200px !important;
+        width: 140px !important;
+        padding-top: 10px !important;
+    }
+
+    .countMatter-list h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .countMatter-list p {
+        font-size: 12px;
+        line-height: 23px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+    }
+
+    .advisor-left h2 {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .advisors-heading h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .advisors-content ul li img {
+        width: 95px;
+        height: 95px;
+        object-fit: contain;
+    }
+
+    .countMatter-main {
+        padding: 10px 0px 40px 0px;
+    }
+
+    .countMatter-list {
+        padding: 10px;
+        width: 140px;
+    }
+
+    .first-right-image img {
+        width: 227px;
+        height: 214px;
+    }
+
+    .advisor-cont {
+        padding: 30px 0px;
+    }
+
+    .advisors-content ul li h5 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .advisors-content ul li p {
+        font-size: 12px;
+    }
+
+    .footer-first {
+        text-align: center;
+    }
+
+    .footer-main .MuiGrid-container {
+        justify-content: space-evenly;
+    }
+    
+    .team-main {
+        padding-bottom: 60px;
+    }
+    .team-left-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .team-left-content p {
+        font-size: 16px;
+    }
+    .team-meet-main {
+        padding: 30px 0px;
+    }
+}

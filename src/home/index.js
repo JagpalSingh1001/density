@@ -98,18 +98,9 @@ function Home() {
 
                                     <div className='discover-video'>
                                         <ReactVideoPlayer
-                                            // width='928px'
                                             url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
                                             type='video/mp4'
                                             poster='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg'
-                                        // captions={[
-                                        //   {
-                                        //     kind: 'captions',
-                                        //     label: 'English',
-                                        //     srcLang: 'en',
-                                        //     src: 'caption_url'
-                                        //   }
-                                        // ]}
                                         />
                                     </div>
 
@@ -246,7 +237,23 @@ function Home() {
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Box className="boost-right-graph">
-                                            <img src={bootsImage} alt="" />
+                                            {/* <img src={bootsImage} alt="" /> */}
+                                            <div class="css-bars">
+                                                <div class="bar-list">
+                                                    <div class="bar one" style={{ height: "20%"}}>
+                                                        <div class="bar-value">
+                                                            <span>20%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bar-list">
+                                                    <div class="bar two" style={{ height: "60%"}}>
+                                                        <div class="bar-value">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </Box>
                                     </Grid>
                                 </Grid>

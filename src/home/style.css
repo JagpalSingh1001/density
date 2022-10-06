@@ -2,9 +2,11 @@ body {
     background: #000000;
     margin: 0;
 }
+
 .p-0 {
     padding: 0px !important;
 }
+
 .first-back {
     background-image: url(../images/first-bg.png);
     background-size: contain;
@@ -18,9 +20,11 @@ body {
     z-index: -1;
     max-width: 100%;
 }
+
 .first-main-top {
     position: relative;
 }
+
 .first-main {
     padding: 50px 0px;
     justify-content: space-between;
@@ -100,25 +104,32 @@ button.start-trading-btn {
     width: 100%;
     overflow: hidden;
 }
+
 .discover-video .vpfr_player_controls .discover-video .vpfr_video_wrapper {
     max-width: 1207.98px;
     height: 450px;
     width: 100%;
 }
+
 .discover-video .vpfr_player_controls {
     width: calc(100% - 105px) !important;
 }
-.discover-video .vpfr_player_controls, .discover-video .vpfr_play_pause_on_click {
+
+.discover-video .vpfr_player_controls,
+.discover-video .vpfr_play_pause_on_click {
     width: calc(100% - 10px) !important;
 }
+
 .discover-video .vpfr_container {
     max-width: 1207.98px;
     height: 450px;
     width: 100%;
 }
+
 .vpfr_paused_player .vpfr_play_pause_on_click {
     width: calc(100% - 0px) !important;
 }
+
 .discover-future-content h2 {
     font-family: 'Overpass';
     font-style: normal;
@@ -667,15 +678,18 @@ button.header-btn {
     font-family: Lato, sans-serif;
     font-size: 40px;
 }
+
 .team-slider .slick-initialized .slick-slide {
     display: block;
 }
+
 .team-slider .slick-slide {
     display: none;
     float: left;
     height: 100%;
     min-height: 1px;
 }
+
 .team-slider-list {
     background: #FFFFFF;
     border-radius: 14px;
@@ -683,6 +697,7 @@ button.header-btn {
     padding: 10px;
     max-width: 160px;
 }
+
 .team-slider-list h5 {
     font-family: 'Overpass';
     font-style: normal;
@@ -693,6 +708,7 @@ button.header-btn {
     color: #000000;
     margin: 10px 0px 5px 0px;
 }
+
 .team-slider-list p {
     font-family: 'Overpass';
     font-style: normal;
@@ -703,11 +719,13 @@ button.header-btn {
     color: #000000;
     margin: 0px;
 }
+
 .team-slider-list img {
     width: 100%;
     max-height: 206px;
     object-fit: contain;
 }
+
 .team-left-content h2 {
     font-family: 'Overpass';
     font-weight: 800;
@@ -716,6 +734,7 @@ button.header-btn {
     color: #FFFFFF;
     margin-bottom: 10px;
 }
+
 .team-left-content p {
     font-family: 'Overpass';
     font-weight: 400;
@@ -724,16 +743,19 @@ button.header-btn {
     color: #FFFFFF;
     margin-top: 0px;
 }
+
 .team-main button.slick-arrow.slick-next {
     left: -70px;
     bottom: 30%;
     top: inherit;
 }
+
 .team-main button.slick-arrow.slick-prev {
     left: -100px;
     bottom: 30%;
     top: inherit;
 }
+
 .team-main .slick-next:before {
     content: '→';
     background: -webkit-linear-gradient(#36D1DC, #5B86E5);
@@ -742,6 +764,7 @@ button.header-btn {
     font-size: 24px !important;
     line-height: 23px !important;
 }
+
 .team-main .slick-prev:before {
     content: '←';
     background: -webkit-linear-gradient(#36D1DC, #5B86E5);
@@ -750,22 +773,29 @@ button.header-btn {
     font-size: 24px !important;
     line-height: 23px !important;
 }
+
 .team-main {
     overflow: hidden;
 }
+
 .vpfr_video_poster_image {
     background-size: cover;
 }
+
 .discover-video .vpfr_video {
     width: 100%;
     height: 100%;
 }
+
 .boost-portfolio {
     padding: 80px 0px;
 }
-.boots-main .slick-prev:before, .slick-next:before {
+
+.boots-main .slick-prev:before,
+.slick-next:before {
     font-size: 30px !important;
 }
+
 .boost-content h2 {
     font-family: 'Overpass';
     font-style: normal;
@@ -777,21 +807,25 @@ button.header-btn {
     align-items: center;
     justify-content: center;
 }
+
 .boost-content h2 span {
     background: -webkit-linear-gradient(#36D1DC, #5B86E5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-right: 10px;
 }
+
 .boost-content h2 img {
     width: 80px;
     height: 80px;
     object-fit: contain;
 }
+
 .boots-slider-list .boots-list-hdg {
     display: flex;
     align-items: center;
 }
+
 .boots-slider-list .boots-list-hdg h5 {
     font-family: 'Overpass';
     font-weight: 400;
@@ -800,6 +834,7 @@ button.header-btn {
     color: #FFFFFF;
     margin: 0px 0px 0px 5px;
 }
+
 .boots-list-left p {
     font-family: 'Overpass';
     font-style: normal;
@@ -811,6 +846,7 @@ button.header-btn {
     color: #A2A2A2;
     margin-bottom: 3px;
 }
+
 .boots-list-left span {
     font-family: 'Overpass';
     font-weight: 400;
@@ -820,6 +856,7 @@ button.header-btn {
     align-items: center;
     color: #FFFFFF;
 }
+
 .boots-list-right h5 {
     font-family: 'Overpass';
     font-weight: 400;
@@ -831,6 +868,7 @@ button.header-btn {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .boots-list-right p {
     font-family: 'Overpass';
     font-weight: 400;
@@ -841,6 +879,7 @@ button.header-btn {
     margin-bottom: 3px;
     color: #A1A1A1;
 }
+
 .boots-list-right span {
     font-family: 'Overpass';
     font-weight: 400;
@@ -849,11 +888,13 @@ button.header-btn {
     display: flex;
     align-items: center;
 }
+
 .boots-list-right {
     display: flex;
     align-items: flex-end;
     flex-direction: column !important;
 }
+
 .boots-slider-list {
     margin: 0px 10px;
     background: #101010;
@@ -861,10 +902,12 @@ button.header-btn {
     border: 1px solid #5FD2F4;
     padding: 11px 16px;
 }
+
 .boost-content h2 {
     font-size: 24px;
     line-height: 30px;
 }
+
 .boost-portfolio-left-content p {
     font-family: 'Overpass';
     font-style: normal;
@@ -875,6 +918,7 @@ button.header-btn {
     align-items: center;
     color: #BDBDBD;
 }
+
 .boots-cont-lists h4 {
     font-family: 'Overpass';
     font-style: normal;
@@ -886,7 +930,8 @@ button.header-btn {
     color: #BDBDBD;
     margin: 0px;
 }
-.boots-cont-lists  p {
+
+.boots-cont-lists p {
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 600;
@@ -897,22 +942,27 @@ button.header-btn {
     color: #BDBDBD;
     margin: 0px;
 }
+
 .boots-cont-lists {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .boost-slide .MuiSlider-track {
     background-color: #fff;
     height: 10px;
 }
+
 .boost-slide .MuiSlider-rail {
     background-color: #515151;
     height: 10px;
 }
+
 .boost-slide {
     margin: 40px 0px;
 }
+
 .boost-slide .MuiSlider-thumb::after {
     background: linear-gradient(90deg, #36D1DC 0%, #5B86E5 100%);
     box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -920,13 +970,16 @@ button.header-btn {
     height: 74px !important;
     border-radius: 30px;
 }
+
 .boost-slide .MuiBox-root {
     width: 100%;
 }
+
 .boost-buton {
     text-align: center;
     padding-top: 50px;
 }
+
 .boost-buton p {
     font-family: 'Overpass';
     font-weight: 300;
@@ -935,12 +988,15 @@ button.header-btn {
     text-align: center;
     color: #FCFCFC;
 }
+
 .boots-main {
     padding-bottom: 30px;
 }
+
 .boost-portfolio-content {
     position: relative;
 }
+
 .boost-portfolio-content .first-back {
     background-image: url(http://localhost:3000/static/media/first-bg.291a462d7ba6eee1685d.png);
     background-size: contain;
@@ -954,12 +1010,112 @@ button.header-btn {
     z-index: 1;
     max-width: 100%;
 }
+
 .boost-portfolio-contain {
     padding: 30px;
 }
+
 .boost-right-graph {
     position: relative;
     z-index: 1;
+}
+
+.boost-right-graph .css-bars {
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    max-width: 600px;
+    clear: both;
+    align-items: center;
+    position: relative;
+}
+
+.boost-right-graph .bar.one:before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    bottom: 12px;
+    height: 100%;
+    width: 23px;
+    -webkit-transform: skewY(45deg);
+    background-image: linear-gradient(to left, rgb(122 122 122), rgb(166 166 166));
+}
+
+.boost-right-graph .bar.one {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    /* height: 20%; */
+    width: 50px;
+    margin: 0 40px 50px 40px;
+    background-image: linear-gradient(to left, rgb(122 122 122), rgb(166 166 166));
+    transform: rotatey(351deg);
+}
+
+.boost-right-graph .bar.one:after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: -12px;
+    width: 51px;
+    height: 23px;
+    background-image: linear-gradient(to left, rgb(122 122 122), rgb(122 122 122));
+    transform: skewX(45deg);
+}
+
+.boost-right-graph .bar.two:before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    bottom: 12px;
+    height: 100%;
+    width: 23px;
+    -webkit-transform: skewY(45deg);
+    background-image: linear-gradient(to left, rgb(0 255 219 / 90%), rgb(77 228 255 / 92%));
+}
+
+.boost-right-graph .bar.two {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    /* height: 60%; */
+    width: 50px;
+    margin: 0 40px 50px 40px;
+    background-image: linear-gradient(to left, rgb(0 255 219 / 90%), rgb(77 228 255 / 92%));
+    transform: rotatey(351deg);
+}
+
+.boost-right-graph .bar.two:after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: -12px;
+    width: 51px;
+    height: 23px;
+    background-image: linear-gradient(to left, rgb(0 255 219 / 90%), rgb(62 203 228 / 92%));
+    transform: skewX(45deg);
+}
+
+.boost-right-graph .bar-list {
+    margin: 0px 70px;
+    height: 400px;
+}
+.boost-right-graph .bar .bar-value {
+    margin-top: -50px;
+    margin-left: -10px;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Overpass';
+}
+
+.boost-right-graph .bar.one .bar-value {
+    color: #7c7a7a;
+}
+
+.boost-right-graph .bar.two .bar-value {
+    color: #0fcabf;
 }
 
 @media (min-width:992px) and (max-width:1199.98px) {
@@ -1021,35 +1177,44 @@ button.header-btn {
         flex-wrap: initial;
         overflow-y: auto;
     }
+
     .advisors-content ul li h5 {
         font-size: 18px;
     }
+
     .advisors-heading h2 {
         font-size: 40px;
         line-height: 50px;
     }
+
     .trade-content .trade-left h2 {
         font-size: 40px;
         line-height: 50px;
     }
+
     .boots-cont-lists h4 {
         font-size: 16px;
         line-height: 20px;
     }
+
     .boots-cont-lists p {
         font-size: 30px;
         margin-left: 10px;
     }
+
     .boost-slide .MuiSlider-thumb::after {
         width: 40px !important;
         height: 60px !important;
     }
+
     .boost-portfolio-left-content p {
         font-size: 16px;
     }
+
     .boost-slide {
         margin: 20px 0px;
     }
+
     .boots-main {
         margin-bottom: 30px;
     }
@@ -1063,11 +1228,13 @@ button.header-btn {
     .menu-icon {
         justify-content: flex-end;
     }
+
     .team-main button.slick-arrow.slick-prev {
         left: 0;
         bottom: -45px !important;
         top: initial;
     }
+
     .team-main button.slick-arrow.slick-next {
         left: 30px;
         bottom: -45px !important;
@@ -1138,24 +1305,29 @@ button.header-btn {
     .countMatter-list h4 {
         font-size: 40px;
     }
-    
+
     .boost-portfolio {
         padding: 0px 0px 40px 0px;
     }
+
     .boots-cont-lists p {
         font-size: 30px;
         line-height: 40px;
     }
+
     .boots-cont-lists h4 {
         font-size: 18px;
         padding-right: 5px;
     }
+
     .advisor-left h2 {
         text-align: center;
     }
+
     .boost-portfolio-content .first-back {
         width: 100%;
     }
+
     .boost-right-graph img {
         max-width: 500px;
         display: flex;
@@ -1178,6 +1350,7 @@ button.header-btn {
         justify-content: center;
         text-align: center;
     }
+
     .first-right-image-right {
         justify-content: center;
     }
@@ -1375,73 +1548,93 @@ button.header-btn {
     .footer-main .MuiGrid-container {
         justify-content: space-evenly;
     }
-    
+
     .team-main {
         padding-bottom: 60px;
     }
+
     .team-left-content h2 {
         font-size: 24px;
         line-height: 30px;
     }
+
     .team-left-content p {
         font-size: 16px;
     }
+
     .team-meet-main {
         padding: 30px 0px;
     }
+
     .discover-video .vpfr_container {
         height: 300px;
     }
-    .discover-video .vpfr_player_controls, .discover-video .vpfr_play_pause_on_click {
+
+    .discover-video .vpfr_player_controls,
+    .discover-video .vpfr_play_pause_on_click {
         width: calc(100% - 20px) !important;
     }
-    
-   .discover-future-crypto {
+
+    .discover-future-crypto {
         padding: 0px !important;
     }
-    .discover-video .vpfr_volume_progress_back, .vpfr_volume_progress_fields {
+
+    .discover-video .vpfr_volume_progress_back,
+    .vpfr_volume_progress_fields {
         max-width: 50px !important;
     }
+
     .discover-video .vpfr_timers {
         font-size: 10px;
     }
+
     .discover-video .vpfr_player_controls button svg {
         padding: 0px !important;
         font-size: 20px !important;
         width: 16px;
         height: 16px;
     }
+
     .vpfr_player_item {
         margin: 0;
     }
+
     .boost-content h2 img {
         display: none;
     }
+
     .boost-content h2 {
         display: block;
         text-align: center;
     }
+
     .boost-content h2 span {
         padding-right: 0;
     }
+
     .boost-portfolio {
         padding: 40px 0px;
     }
+
     .boost-slide .MuiSlider-thumb::after {
         width: 30px !important;
         height: 40px !important;
     }
+
     .boots-cont-lists h4 {
         font-size: 20px;
     }
+
     .boost-portfolio-left-content p {
         font-size: 16px;
         text-align: center;
         margin: 0px;
     }
+
     .boost-slide {
         margin: 20px 0px;
     }
+
     .boots-cont-lists p {
         font-size: 20px;
         line-height: 26px;
@@ -1449,25 +1642,32 @@ button.header-btn {
         margin: 0px;
         padding-left: 5px;
     }
+
     .header-logo {
         width: 120px;
     }
+
     .boost-buton {
         text-align: center;
         padding-top: 0px;
     }
+
     .boost-buton button.start-trading-btn {
         margin-top: 20px;
     }
+
     .boots-cont-list {
         margin-top: 10px;
     }
+
     .advisors-main {
         padding: 20px 0px;
     }
+
     .boost-portfolio-content .first-back {
         width: 100%;
     }
+
     .boost-right-graph img {
         max-width: 500px;
         display: flex;
@@ -1475,9 +1675,14 @@ button.header-btn {
         margin: 0 auto;
         width: 100%;
     }
+
     .trade-cont-Futures {
         align-items: center;
         justify-content: center;
+    }
+    .boost-right-graph .bar-list {
+        margin: 0px 50px;
+        height: 350px;
     }
 }
 
@@ -1494,16 +1699,21 @@ button.header-btn {
         align-items: center;
         justify-content: flex-start;
     }
+
     .team-main .slick-slide {
         min-width: 120px;
         margin-right: 34px;
     }
+
     .team-main .slick-list {
         padding-left: 0px !important;
     }
-    .team-main .slick-prev, .team-main .slick-next {
+
+    .team-main .slick-prev,
+    .team-main .slick-next {
         display: none !important;
     }
+
     .team-main {
         padding-bottom: 20px;
     }

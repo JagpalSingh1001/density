@@ -1117,6 +1117,9 @@ button.header-btn {
 .boost-right-graph .bar.two .bar-value {
     color: #0fcabf;
 }
+.team-meet-main {
+    background-color: #0D0D0D;
+}
 
 @media (min-width:992px) and (max-width:1199.98px) {
     .first-left-content h2 {

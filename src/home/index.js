@@ -29,7 +29,8 @@ import Footer from '../footer';
 import Team from '../teamSlider';
 import BoostPortfolio from '../boostPortfolio';
 import loadingGif from "../images/first-image-gif.gif";
-import { ReactVideoPlayer } from 'video-player-for-react'
+import videoMain from "../images/Wave.mp4";
+import { ReactVideoPlayer } from 'video-player-for-react';
 import 'video-player-for-react/dist/index.css';
 
 import Slider from '@mui/material/Slider';
@@ -98,9 +99,9 @@ function Home() {
 
                                     <div className='discover-video'>
                                         <ReactVideoPlayer
-                                            url='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+                                            url={videoMain}
                                             type='video/mp4'
-                                            poster='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg'
+                                            poster={videoMain}
                                         />
                                     </div>
 

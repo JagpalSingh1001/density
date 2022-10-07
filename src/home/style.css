@@ -93,6 +93,10 @@ button.start-trading-btn {
     text-align: center;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
+}
+button.start-trading-btn:hover {
+    background: linear-gradient(90deg, #37e6f3 0%, #215ad6 100%);
 }
 
 .discover-video {
@@ -522,6 +526,13 @@ button.start-trading-btn {
 
 .faq-right .MuiCollapse-root.MuiCollapse-vertical p.MuiTypography-root {
     color: #fff;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
 }
 
 .MuiAccordionSummary-expandIconWrapper {
@@ -567,11 +578,23 @@ button.header-btn {
 }
 
 .header-link {
-    font-family: 'Inter';
+    font-family: 'Overpass';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700 !important;
     font-size: 14px;
     line-height: 20px;
+}
+#menu-appbar .menu-item a {
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.header-link.active {
+    color: #00C9F7 !important;
 }
 
 .first-right-image img {
@@ -1119,6 +1142,64 @@ button.header-btn {
 }
 .team-meet-main {
     background-color: #0D0D0D;
+}
+.choose-list:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098d199;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.choose-list {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.choose-list:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.choose-list:hover h4 {
+    color: #fff !important;
+    background: -webkit-linear-gradient(#fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.choose-list:hover p {
+    color: #fff;
+}
+.faq-main .faq-content .MuiAccordionSummary-root .MuiAccordionSummary-content p {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
 @media (min-width:992px) and (max-width:1199.98px) {

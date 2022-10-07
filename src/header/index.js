@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import Link from '@mui/material/Link';
 
 const pages = ['Market', 'Blogs', 'Contact Us'];
 
@@ -45,40 +46,65 @@ const Header = () => {
                         </IconButton>
                         <Menu
                             id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
+                            // anchorEl={anchorElNav}
+                            // anchorOrigin={{
+                            //     vertical: 'bottom',
+                            //     horizontal: 'left',
+                            // }}
+                            // keepMounted
+                            // transformOrigin={{
+                            //     vertical: 'top',
+                            //     horizontal: 'left',
+                            // }}
+                            // open={Boolean(anchorElNav)}
+                            // onClose={handleCloseNavMenu}
+                            // sx={{
+                            //     display: { xs: 'block', md: 'none' },
+                            // }}
                         >
-                            {pages.map((page) => (
+                            {/* {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
-                            ))}
+                            ))} */}
+                            <MenuItem className='menu-item active'>
+                                <Link href="#" textAlign="center">Market</Link>
+                            </MenuItem>
+                            <MenuItem className='menu-item'>
+                                <Link href="#" textAlign="center">Blogs</Link>
+                            </MenuItem>
+                            <MenuItem className='menu-item'>
+                                <Link href="#" textAlign="center">Contact Us</Link>
+                            </MenuItem>
                         </Menu>
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
+                        {/* {pages.map((page) => ( */}
                             <Button
-                                key={page}
+                                // key={page}
+                                className="header-link active"
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >Market
+                                {/* {page} */}
+                            </Button>
+                            <Button
+                                // key={page}
                                 className="header-link"
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
+                            >Blogs
+                                {/* {page} */}
                             </Button>
-                        ))}
+                            <Button
+                                // key={page}
+                                className="header-link"
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >Contact Us
+                                {/* {page} */}
+                            </Button>
+                        {/* ))} */}
                     </Box>
 
                     <Box className='header-right' sx={{ flexGrow: 0, display: "flex", alignItems: 'center' }}>

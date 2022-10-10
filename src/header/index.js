@@ -4,15 +4,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Link from '@mui/material/Link';
-
-const pages = ['Market', 'Blogs', 'Contact Us'];
 
 const Header = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,12 +24,11 @@ const Header = () => {
 
     return (
         <AppBar position="static" className="header-main">
-            <Container maxWidth="xl">
+            <Container >
                 <Toolbar disableGutters>
                     <Box className="header-logo">
                         <img src={logo} alt="logo" />
                     </Box>
-
                     <Box className='menu-icon' sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -46,27 +42,18 @@ const Header = () => {
                         </IconButton>
                         <Menu
                             id="menu-appbar"
-                            // anchorEl={anchorElNav}
-                            // anchorOrigin={{
-                            //     vertical: 'bottom',
-                            //     horizontal: 'left',
-                            // }}
-                            // keepMounted
-                            // transformOrigin={{
-                            //     vertical: 'top',
-                            //     horizontal: 'left',
-                            // }}
-                            // open={Boolean(anchorElNav)}
-                            // onClose={handleCloseNavMenu}
-                            // sx={{
-                            //     display: { xs: 'block', md: 'none' },
-                            // }}
-                        >
-                            {/* {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))} */}
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            open={Boolean(anchorElNav)}
+                            onClose={handleCloseNavMenu}>
                             <MenuItem className='menu-item active'>
                                 <Link href="#" textAlign="center">Market</Link>
                             </MenuItem>
@@ -76,35 +63,27 @@ const Header = () => {
                             <MenuItem className='menu-item'>
                                 <Link href="#" textAlign="center">Contact Us</Link>
                             </MenuItem>
+                            <MenuItem className='menu-item'>
+                                <Link href="#" textAlign="center">Log In</Link>
+                            </MenuItem>
                         </Menu>
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {/* {pages.map((page) => ( */}
                             <Button
-                                // key={page}
                                 className="header-link active"
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
-                            >Market
-                                {/* {page} */}
-                            </Button>
+                            >Market</Button>
                             <Button
-                                // key={page}
                                 className="header-link"
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
-                            >Blogs
-                                {/* {page} */}
-                            </Button>
+                            >Blogs</Button>
                             <Button
-                                // key={page}
                                 className="header-link"
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
-                            >Contact Us
-                                {/* {page} */}
-                            </Button>
-                        {/* ))} */}
+                            >Contact Us</Button>
                     </Box>
 
                     <Box className='header-right' sx={{ flexGrow: 0, display: "flex", alignItems: 'center' }}>

@@ -16,7 +16,7 @@ import referIcon from '../images/refer-icon.png';
 import tradeFutures from '../images/trade-image.png';
 import referImage from '../images/refer-img.png';
 import faqImage from '../images/faq-image.png';
-import bootsImage from '../images/boots-graph.png';
+// import bootsImage from '../images/boots-graph.png';
 import './style.css';
 import { Grid, Container, Box } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
@@ -30,6 +30,7 @@ import Team from '../teamSlider';
 import BoostPortfolio from '../boostPortfolio';
 import loadingGif from "../images/first-image-gif.gif";
 import videoMain from "../images/Wave.mp4";
+// import backgroundVideo from "../images/Wave.mp4";
 import { ReactVideoPlayer } from 'video-player-for-react';
 import 'video-player-for-react/dist/index.css';
 
@@ -71,23 +72,25 @@ function Home() {
             <div className="">
                 <Container fixed maxWidth="xl" className='first-main-top'>
                     <div className="first-back"></div>
-                    <Grid container spacing={2} columns={16} className="first-main">
-                        <Grid container item md={6} sm={12}>
-                            <div className='first-left-content'>
-                                <h2>TRADE THE</h2>
-                                <h1>FUTURE</h1>
-                                <p>Trade in <span>PERPETUAL</span> contract of  bitcoin, ethereum and <span>100+ COINS</span> using leverage upto <span>10x</span></p>
-                                <span className='text-first'>🎉 Get reward upto $10 on first signup</span>
-                                <button className='start-trading-btn'>START TRADING</button>
-                            </div>
+                    <Container>
+                        <Grid container spacing={2} columns={16} className="first-main">
+                            <Grid container item md={6} sm={12}>
+                                <div className='first-left-content'>
+                                    <h2>TRADE THE</h2>
+                                    <h1>FUTURE</h1>
+                                    <p>Trade in <span>PERPETUAL</span> contract of  bitcoin, ethereum and <span>100+ COINS</span> using leverage upto <span>10x</span></p>
+                                    <span className='text-first'>🎉 Get reward upto $10 on first signup</span>
+                                    <button className='start-trading-btn'>START TRADING</button>
+                                </div>
+                            </Grid>
+                            <Grid container item md={6} sm={12} className='first-right-image-right'>
+                                <div className='first-right-image'>
+                                    <img src={loadingGif} alt="wait until the page loads" />
+                                    <button className='start-trading-btn'>START TRADING</button>
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid container item md={6} sm={12} className='first-right-image-right'>
-                            <div className='first-right-image'>
-                                <img src={loadingGif} alt="wait until the page loads" />
-                                <button className='start-trading-btn'>START TRADING</button>
-                            </div>
-                        </Grid>
-                    </Grid>
+                    </Container>
                 </Container>
 
                 <Container maxWidth="xl" className='discover-future-crypto p-0'>
@@ -113,7 +116,10 @@ function Home() {
                         </div>
                     </Container>
 
-                    <div className='choose-main'>
+                    <div className='choose-main video-background'>
+                        <video autoplay="true" muted loop style={{ width: "100%" }}>
+                            <source src={videoMain} type="video/mp4" />
+                        </video>
                         <Container>
                             <div className='choose-content'>
                                 <h2>Why  choose  Density ?</h2>
@@ -168,8 +174,11 @@ function Home() {
                         </Container>
                     </div>
 
-                    <div className='trade-main'>
-                        <Container>
+                    <div className='trade-main video-background'>
+                        <video autoplay="true" muted loop style={{ width: "100%" }}>
+                            <source src={videoMain} type="video/mp4" />
+                        </video>
+                        <Container className='trade-content-main'>
                             <div className='trade-content'>
                                 <Grid container spacing={3} className="trade-cont-Futures">
                                     <Grid item md={5} sm={12}>
@@ -241,14 +250,14 @@ function Home() {
                                             {/* <img src={bootsImage} alt="" /> */}
                                             <div class="css-bars">
                                                 <div class="bar-list">
-                                                    <div class="bar one" style={{ height: "20%"}}>
+                                                    <div class="bar one" style={{ height: "20%" }}>
                                                         <div class="bar-value">
                                                             <span>20%</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="bar-list">
-                                                    <div class="bar two" style={{ height: "60%"}}>
+                                                    <div class="bar two" style={{ height: "60%" }}>
                                                         <div class="bar-value">
                                                             <span>60%</span>
                                                         </div>
@@ -330,7 +339,10 @@ function Home() {
                     </div>
                 </Container>
 
-                <div className='team-meet-main'>
+                <div className='team-meet-main video-background'>
+                    <video autoplay="true" muted loop style={{ width: "100%" }}>
+                        <source src={videoMain} type="video/mp4" />
+                    </video>
                     <Team />
                 </div>
 
